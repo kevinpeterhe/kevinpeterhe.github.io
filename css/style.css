@@ -24,13 +24,13 @@ body {
     /* text-align: center; */
   }
 
-#type {
+#type1 {
     width: 100%;
     height: 100%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../images/type.png");
+    background-image: url("../images/type1.png");
     filter: brightness(130%);
   }
 
@@ -41,17 +41,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../images/lines.png");
-    filter: brightness(120%);
+    filter: brightness(130%);
   }
 
-#grids {
+#grids2 {
     width: 100%;
     height: 100%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../images/grids.png");
-    filter: brightness(200%);
+    background-image: url("../images/grids2.png");
   }
 
 #windows {
@@ -62,7 +61,6 @@ body {
     background-repeat: no-repeat;
     background-image: url("../images/windows.png");
     opacity: 80%;
-    filter: brightness(70%);
   }
 
 #retical {
@@ -72,7 +70,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../images/retical.png");
-    filter: brightness(140%);
+    filter: brightness(130%);
   }
 
 #noise {
@@ -82,5 +80,58 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../images/noise.png");
-    opacity: 0.6;
+    opacity: 0.4;
   }
+
+  #type2 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/type2.png");
+  }
+
+  #type4 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/type4.png");
+    filter: brightness(130%);
+  }
+
+  #grids1 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/grids1.png");
+    filter: brightness(110%);
+  }
+
+  #ui1 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/ui1.png");
+    filter: brightness(110%);
+  }
+
+  #ui2 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/ui2.png");
+    filter: brightness(150%);
+  }
+
+/* #type4:hover {
+    filter: brightness(500%);
+  } */
