@@ -1,0 +1,86 @@
+div {
+    position: absolute;
+  }
+  
+body {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: black; */
+    background-image: 
+    /* linear-gradient(rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)),  */
+    url("images/background.jpg");
+  }
+
+#scene {
+    width: 100vw;
+    height: 100vh;
+    /* top: 20%;
+    left: 20%; */
+    /* transform: translate(-50%, -50%); */
+    /* text-align: center; */
+  }
+
+#type {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("images/type.png");
+    filter: brightness(130%);
+  }
+
+#lines {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("images/lines.png");
+    filter: brightness(120%);
+  }
+
+#grids {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("images/grids.png");
+    filter: brightness(200%);
+  }
+
+#windows {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("images/windows.png");
+    opacity: 80%;
+    filter: brightness(70%);
+  }
+
+#retical {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("images/retical.png");
+    filter: brightness(140%);
+  }
+
+#noise {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("images/noise.png");
+    opacity: 0.6;
+  }
