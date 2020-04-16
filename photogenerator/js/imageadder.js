@@ -7,7 +7,6 @@ const images = [
   "https://kevinpeterhe.github.io/photogenerator/images/6.png",
   "https://kevinpeterhe.github.io/photogenerator/images/7.png",
   "https://kevinpeterhe.github.io/photogenerator/images/8.png",
-  "https://kevinpeterhe.github.io/photogenerator/images/9.png",
   "https://kevinpeterhe.github.io/photogenerator/images/10.png",
   "https://kevinpeterhe.github.io/photogenerator/images/11.png",
   "https://kevinpeterhe.github.io/photogenerator/images/12.png",
@@ -25,7 +24,6 @@ const colorArray = [
   "#271f3e",
   "#0b3039", 
   "#c3e1e1",
-  "#bbc5a5", 
   "#6a8fa2", 
   "#000000",
   "#000000",
@@ -34,20 +32,19 @@ const colorArray = [
 ]
 
 const gradientArray = [
-  "linear-gradient(45deg, #753a88, #cc2b5e)",
-  "blue", 
-  "linear-gradient(45deg, #56B4D3, #348F50)",
-  "linear-gradient(45deg, #753a88, #cc2b5e)", 
-  "yellow", 
-  "linear-gradient(45deg, #9733EE, #DA22FF)",
-  "green", 
-  "linear-gradient(45deg, #DD2476, #FF512F)",
-  "purple", 
-  "linear-gradient(45deg, #DD2476, #FF512F)", 
-  "orange", 
-  "gray",
-  "linear-gradient(45deg, #753a88, #cc2b5e)",
-  "linear-gradient(45deg, #753a88, #cc2b5e)"
+  "linear-gradient(45deg, #eb5f6f, #bfe9ff)",
+  "linear-gradient(45deg, #112653, #e78ebe)", 
+  "linear-gradient(45deg, #385573, #c2d4e8)",
+  "linear-gradient(45deg, #b55eaf, #8cd6dc)", 
+  "linear-gradient(45deg, #274046, #E6DADA)", 
+  "linear-gradient(45deg, #642B73, #bc7d89)",
+  "linear-gradient(45deg, #0e1d24, #30515a)", 
+  "linear-gradient(45deg, #5e8e90, #dcecec)",
+  "linear-gradient(45deg, #1e4457, #92aec4)", 
+  "linear-gradient(45deg, #232526, #5e5e60)", 
+  "linear-gradient(45deg, #232526, #5e5e60)",
+  "linear-gradient(45deg, #0a0b0f, #616f7c)",
+  "linear-gradient(45deg, #11101e, #928f7f)"
 ]
 
 // var random = Math.floor(Math.random() * images.length)
@@ -83,10 +80,8 @@ img.style.transform = "translate(-50%, -50%) scale(" + scale + ") rotate(" + (Ma
 document.querySelector("section.collage").appendChild(img);
 
 let container = document.getElementById('container');
-    container.style.background = colorArray[newRandom];
-    // container.style.backgroundImage = gradientArray[newRandom];
-    // container.style.background = "#753a88";
-    // container.style.backgroundImage = "linear-gradient(45deg, #753a88, #cc2b5e)";
+    // container.style.background = colorArray[newRandom];
+    container.style.backgroundImage = gradientArray[newRandom];
   }
 }
 
