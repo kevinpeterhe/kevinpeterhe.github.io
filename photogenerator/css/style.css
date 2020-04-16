@@ -208,15 +208,3 @@ footer p {
   
   padding-bottom: 5px;
 }
-
-@media (max-width: 415px) {
-  body {
-    font-size: 13px;
-  }
-  
-  @media (pointer: coarse) {
-    .mobile-tap {
-      display: flex;
-  }
- 
-}
