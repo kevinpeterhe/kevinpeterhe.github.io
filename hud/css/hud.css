@@ -135,3 +135,36 @@ body {
 /* #type4:hover {
     filter: brightness(500%);
   } */
+
+  div#anim-circles-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+    div.anim-circle {
+      width: 10px;
+      height: 120px;
+      border-radius: 25px;
+      position: absolute;
+      left: 200px;
+      /* transform: skew(20deg); */
+      background: rgb(209, 234, 255);
+      box-shadow: 0 0 30px rgb(89, 230, 255);
+    }
+    
+    div#circle-1 {
+      animation: my-animation 4s ease 0s infinite linear;
+    }
+
+    @keyframes my-animation {
+      0% {
+        background-position: (10, 10);
+      }
+    
+      100% {
+        transform: scale(0.001, 0.001);
+        background-position: (1000, 1000);
+      }
+    }
+    
