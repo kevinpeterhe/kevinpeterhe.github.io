@@ -1,18 +1,18 @@
 const images = [
-	"../images/1.jpg",
-  "../images/2.jpg",
-  "../images/3.jpg",
-  "../images/4.jpg",
-  "../images/5.jpg",
-  "../images/6.jpg",
-  "../images/7.jpg",
-  "../images/8.jpg",
-  "../images/9.jpg",
-  "../images/10.jpg",
-  "../images/11.jpg",
-  "../images/12.jpg",
-  "../images/13.jpg",
-  "../images/14.jpg"
+	"../images/1.png",
+  "../images/2.png",
+  "../images/3.png",
+  "../images/4.png",
+  "../images/5.png",
+  "../images/6.png",
+  "../images/7.png",
+  "../images/8.png",
+  "../images/9.png",
+  "../images/10.png",
+  "../images/11.png",
+  "../images/12.png",
+  "../images/13.png",
+  "../images/14.png"
 
 ]
 
@@ -33,21 +33,21 @@ const colorArray = [
   "#928f7f"
 ]
 
-const gradientArray = [
-  "linear-gradient(45deg, #753a88, #cc2b5e)",
-  "blue", 
-  "linear-gradient(45deg, #56B4D3, #348F50)",
-  "black", 
-  "yellow", 
-  "linear-gradient(45deg, #9733EE, #DA22FF)",
-  "green", 
-  "linear-gradient(45deg, #DD2476, #FF512F)",
-  "purple", 
-  "linear-gradient(45deg, #DD2476, #FF512F)", 
-  "orange", 
-  "gray",
-  "red"
-]
+// const gradientArray = [
+//   "linear-gradient(45deg, #753a88, #cc2b5e)",
+//   "blue", 
+//   "linear-gradient(45deg, #56B4D3, #348F50)",
+//   "black", 
+//   "yellow", 
+//   "linear-gradient(45deg, #9733EE, #DA22FF)",
+//   "green", 
+//   "linear-gradient(45deg, #DD2476, #FF512F)",
+//   "purple", 
+//   "linear-gradient(45deg, #DD2476, #FF512F)", 
+//   "orange", 
+//   "gray",
+//   "red"
+// ]
 
 // var random = Math.floor(Math.random() * images.length)
 let i = 0
