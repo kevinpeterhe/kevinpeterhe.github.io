@@ -33,21 +33,22 @@ const colorArray = [
   "#928f7f"
 ]
 
-// const gradientArray = [
-//   "linear-gradient(45deg, #753a88, #cc2b5e)",
-//   "blue", 
-//   "linear-gradient(45deg, #56B4D3, #348F50)",
-//   "black", 
-//   "yellow", 
-//   "linear-gradient(45deg, #9733EE, #DA22FF)",
-//   "green", 
-//   "linear-gradient(45deg, #DD2476, #FF512F)",
-//   "purple", 
-//   "linear-gradient(45deg, #DD2476, #FF512F)", 
-//   "orange", 
-//   "gray",
-//   "red"
-// ]
+const gradientArray = [
+  "linear-gradient(45deg, #753a88, #cc2b5e)",
+  "blue", 
+  "linear-gradient(45deg, #56B4D3, #348F50)",
+  "linear-gradient(45deg, #753a88, #cc2b5e)", 
+  "yellow", 
+  "linear-gradient(45deg, #9733EE, #DA22FF)",
+  "green", 
+  "linear-gradient(45deg, #DD2476, #FF512F)",
+  "purple", 
+  "linear-gradient(45deg, #DD2476, #FF512F)", 
+  "orange", 
+  "gray",
+  "linear-gradient(45deg, #753a88, #cc2b5e)",
+  "linear-gradient(45deg, #753a88, #cc2b5e)"
+]
 
 // var random = Math.floor(Math.random() * images.length)
 let i = 0
@@ -84,8 +85,8 @@ document.querySelector("section.collage").appendChild(img);
 let container = document.getElementById('container');
     container.style.background = colorArray[newRandom];
     // container.style.backgroundImage = gradientArray[newRandom];
-    // container.style.backgroundImage = 'linear-gradient('
-    // + '45deg' + ', ' + colorArray[newRandom] + ', ' + colorArray[newRandom] + ')';
+    // container.style.background = "#753a88";
+    // container.style.backgroundImage = "linear-gradient(45deg, #753a88, #cc2b5e)";
   }
 }
 
