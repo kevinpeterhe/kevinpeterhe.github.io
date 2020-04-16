@@ -1,18 +1,18 @@
 const images = [
-	"../images/1.png",
-  "../images/2.png",
-  "../images/3.png",
-  "../images/4.png",
-  "../images/5.png",
-  "../images/6.png",
-  "../images/7.png",
-  "../images/8.png",
-  "../images/9.png",
-  "../images/10.png",
-  "../images/11.png",
-  "../images/12.png",
-  "../images/13.png",
-  "../images/14.png"
+	"https://kevinpeterhe.github.io/photogenerator/images/1.png",
+  "https://kevinpeterhe.github.io/photogenerator/images/2.png",
+  "https://kevinpeterhe.github.io/photogenerator/images/3.png",
+  "https://kevinpeterhe.github.io/photogenerator/images/4.png",
+  "https://kevinpeterhe.github.io/photogenerator/images/5.png",
+  "https://kevinpeterhe.github.io/photogenerator/images/6.png",
+  "https://kevinpeterhe.github.io/photogenerator/images/7.png",
+  "https://kevinpeterhe.github.io/photogenerator/images/8.png",
+  "https://kevinpeterhe.github.io/photogenerator/images/9.png",
+  "https://kevinpeterhe.github.io/photogenerator/images/10.png",
+  "https://kevinpeterhe.github.io/photogenerator/images/11.png",
+  "https://kevinpeterhe.github.io/photogenerator/images/12.png",
+  "https://kevinpeterhe.github.io/photogenerator/images/13.png",
+  "https://kevinpeterhe.github.io/photogenerator/images/14.png"
 
 ]
 
@@ -77,9 +77,9 @@ const img = document.createElement("img")
         var scale = 0.25
 }
 
-img.style.transform = "translate(-50%, -50%) scale(" + scale + ") rotate(" + (Math.random() * 10 - 5) + "deg)"
+img.style.transform = "translate(-50%, -50%) scale(" + scale + ") rotate(" + (Math.random() * 10 - 5) + "deg)";
     
-document.querySelector("section.collage").appendChild(img)
+document.querySelector("section.collage").appendChild(img);
 
 let container = document.getElementById('container');
     container.style.background = colorArray[newRandom];
