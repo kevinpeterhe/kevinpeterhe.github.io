@@ -66,15 +66,17 @@ let sketch = function(p) {
     update(index) {
       this.pos.x += p.cos(this.angle);
       this.pos.y += p.sin(this.angle);
-
+      //vertical stretch
       let nx = 1.8 * p.map(this.pos.x, 0, p.width, -1, 1);
+      //horizontal stretch
       let ny = 1.8 * p.map(this.pos.y, 0, p.height, -1, 1);
 
       let np = pTransform.transformInverse(nx, ny);
 
       let n = p.createVector(nx, ny);
-
+      //height of noise
       this.altitude = p.noise(n.x + 423.2, n.y - 231.1) + 0.05 * p.noise(n.x * 15 + 113.3, n.y * 15 + 221.1);
+      //width of rings
       let nval = (this.altitude + 0.045 * (index - number_of_particle_sets / 2)) % 1;
 
       this.angle += 3 * p.map(nval, 0, 1, -1, 1);
