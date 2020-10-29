@@ -1,0 +1,127 @@
+"The Usual Suspects"
+
+LAPD Lobby is a room. "You are detective Dave Kujan of the U.S. Customs. You have just flown into Los Angeles to investigate a supposed drug deal that resulted in an explosion, twenty seven dead bodies, and a lone survivor--a cripple with the name of Roger 'Verbal' Kint. 
+
+You are in the lobby of the LAPD. The places reeks of tabacco. You have Verbal's files in your hands.
+
+A door leads North to the office of Sergeant Rabin, the officer on this case, where Verbal is being held."
+
+Verbal's files is here. Verbal's files is scenery. The description of Verbal's files is "Roger 'Verbal' Kint, 33 years old. Last police record was in Los Angeles County jail, reason is fraud. Sentence ninety days, suspended."
+
+The bulletin board has a number called the state. The state is 0.
+The paperwork has a number called the state. The state is 0.
+The wanted posters has a number called the state. The state is 0.
+The rap sheets has a number called the state. The state is 0.
+The coffee mug has a number called the state. The state is 0.
+
+Sergeant Rabin's Office is north of LAPD Lobby. "Sergeant Rabin's office can only be described as a disaster area. The desk is cluttered with weeks, perhaps months or even years of paperwork that could never conceivably be sorted out.
+
+Above his desk is a bulletin board. It is a breathtaking catastrophe of wanted posters and rap sheets. This is in the neighborhood of decades. Rabin is a man with a system so cryptic, so far beyond the comprehension of others, he himself is most likely baffled by it."
+
+Verbal is a man in Sergeant Rabin's Office.
+"Verbal is sitting in the middle of the room. He has a deeply lined face, making his thirty-odd years a good guess at best. From his twisted left hand, we can see that he suffers from a slight but not debilitating palsy. He fidgets and nervously sips his cup of coffee out of a porcelain mug.
+
+Your training tells you to ask Verbal about the drug deal."
+
+The bulletin board is here. The paperwork is here. The wanted posters is here. The coffee mug is here. The rap sheets is here.
+
+The bulletin board is scenery. The description of the bulletin board is "One might note it's sturdy construction and it's convenient size. Big enough to hold a lifetime of forgotten and disregarded notes and facts. One might want such a bulletin board for one's self. One would look to see who makes such a bulletin board. A metal plate on its aluminum frame bears the name of the manufacturer: Quartet - Skokie, Illinois." 
+
+After examining the bulletin board:
+	now the state is 1;
+	rule succeeds.
+
+The paperwork is scenery. The description of the paperwork is "It contains mostly tax information from the IRS. The police have to pay taxes too. You think about the amount you paid last year and sigh."
+
+After examining the paperwork:
+	now the state is 1;
+	rule succeeds.
+
+The wanted posters is scenery. The description of the wanted posters is "The most dangerous criminal in Guatemala: Horst Walther Overdick, alias 'El Tigre.' He is the biggest drug trafficker and was reported captured in April 2012 only to be found missing in his cell two years later."
+
+After examining the wanted posters:
+	now the state is 1;
+	rule succeeds.
+	
+The rap sheets is scenery. The description of the rap sheets is "It is an eight and a half by eleven inch fax sheet of what must be a three hundred pound man. His aliases stand out.
+
+Slavin, Bricks, Shank, Redfoot, Thee, Rooster..."
+
+After examining the rap sheets:
+	now the state is 1;
+	rule succeeds.
+	
+The coffee mug is scenery. The description of the coffee mug is "It's a mass manufactured coffee mug from Kobayashi porcelain. Since the LAPD slashed their budgets last year you're pretty sure it's under $5."
+
+After examining the coffee mug:
+	now the state is 1;
+	rule succeeds.
+
+Instead of telling someone about something, try asking the noun about it. Instead of answering the noun that something, try asking the noun about it.
+
+Instead of asking Verbal about "the drug deal":
+	if the state of the wanted posters is 1:
+		say "He takes a sip of his coffee. 'Ahhh. Back when I was picking beans in Guatemala we used to make fresh coffee. Right off the trees I mean. That was good. This is shit, but hey...
+	
+	Oh, sorry officer I got carried away there. I was at the pier when the shooting happened but I didn't see anything. But what I do know is how this all started.'
+	
+	Your sharp police instincts prod you that something sounds off. You remember, Guatemala was mentioned in the wanted poster and quickly realize Verbal is anything but truthful. 'Don't play with me Verbal, I know you are full of shit. Your con-man tricks won't work on me. Since you don't want to cooperate I'm throwing you into jail.'
+	
+		YOU WIN";
+		end the story finally;
+	otherwise:
+		say "He takes a sip of his coffee. 'Ahhh. Back when I was picking beans in Guatemala we used to make fresh coffee. Right off the trees I mean. That was good. This is shit, but hey...
+	
+	Oh, sorry officer I got carried away there. I was at the pier when the shooting happened but I didn't see anything. But what I do know is how it all started.'";
+		continue the action.
+
+Instead of asking Verbal about "how it all started":
+	if the state of the rap sheets is 1:
+		say "He takes another sip of his coffee. 'It all started with a job we took from a guy in California called Redfoot. The job went South so we were at his mercy. He then told us he was only a middle man for a lawyer, and that the lawyer would like to speak with us. So we went to go meet with the lawyer.'
+	
+	Your sharp police instincts prod you that something sounds off. You remember, Redfoot was an alias of the large man mentioned in the rap sheet and quickly realize Verbal is anything but truthful. 'Don't play with me Verbal, I know you are full of shit. Your con-man tricks won't work on me. Since you don't want to cooperate I'm throwing you into jail.'
+	
+		YOU WIN";
+		end the story finally;
+	otherwise:
+		say "He takes another sip of his coffee. 'It all started with a job we took from a guy in California called Redfoot. The job went South so we were at his mercy. He then told us he was only a middle man for a lawyer, and that the lawyer would like to speak with us. So we went to go meet with the lawyer.";
+		continue the action.
+	
+Instead of asking Verbal about "the lawyer":
+	if the state of the coffee mug is 1:
+		say "He takes another sip of his coffee. 'The lawyer's name was Kobayashi. He works for the legendary and mysterious criminal Keyser Soze, whom no one has ever actually seen. He had all the dirt on all of us, and used that information to blackmail us into stopping this drug deal. But when we got there, there weren't any drugs. They were actually trading a person. A Hungarian gang that was an enemy of Soze's is planning on buying a man who can identify Soze for ninety one million dollars. We opened fire and everyone but Dean Keaton died.'
+	
+	Your sharp police instincts prod you that something sounds off. You remember, Kobayashi is the name of the porcelain brand of LAPD coffee mugs and quickly realize Verbal is anything but truthful. 'Don't play with me Verbal, I know you are full of shit. Your con-man tricks won't work on me. Since you don't want to cooperate I'm throwing you into jail.'
+	
+		YOU WIN";
+		end the story finally;
+	otherwise:
+		say "He takes another sip of his coffee. 'The lawyer's name was Kobayashi. He works for the legendary and mysterious criminal Keyser Soze, whom no one has ever actually seen. He had all the dirt on all of us, and used that information to blackmail us into stopping this drug deal. But when we got there, there weren't any drugs. They were actually trading a person. A Hungarian gang that was an enemy of Soze's is planning on buying a man who can identify Soze for ninety one million dollars. We opened fire and everyone but Dean Keaton died.'";
+		continue the action.
+		
+Instead of asking Verbal about "dean keaton":
+	if the state of the bulletin board is 1:
+		say "'I realized Dean Keaton was the master mind behind all of this. He is Keyser Soze. He did his research on all of us, he even knew that I was part of a barbershop quartet back in my hometown of Skokie, Illinois. Now it's only a matter of time that he'll come find me and kill me.'
+	
+	Your sharp police instincts prod you that something sounds off. You remember, the manufacturer of the bulletin board was called Quartet in Skokie, Illinois and quickly realize Verbal is anything but truthful. 'Don't play with me Verbal, I know you are full of shit. Your con-man tricks won't work on me. Since you don't want to cooperate I'm throwing you into jail.'
+	
+	YOU WIN";
+		end the story finally;
+	otherwise:
+		say "'I realized Dean Keaton was the master mind behind all of this. He is Keyser Soze. He did his research on all of us, he even knew that I was part of a barbershop quartet back in my hometown of Skokie, Illinois. Now it's only a matter of time that he'll come find me and kill me.'
+		
+		You smile and nod. You knew Keaton was behind this all along, but needed the confirmation from Verbal. You order Verbal to be released and go to share your findings with Sergeant Rabin.
+		
+		Just as you're about to leave his office, your eyes catch a glimpse of the bulletin board. A metal plate on its aluminum frame bears the name of the manufacturer: Quartet - Skokie, Illinois. Chills down your spine as you realize Verbal has been making the whole story up with objects in the office. He is the real Keyser Soze.
+		
+		You run out to find him but he is long gone, never to be seen again.
+		
+		YOU LOSE";
+		end the story finally.
+		
+
+Release along with an interpreter and the source text.
+	
+
+
+
